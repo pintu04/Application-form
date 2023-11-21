@@ -1,0 +1,49 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+     <link rel="icon" href="image/google-forms.png">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="backlogin">
+  {{>navbar}}
+    <div class="custom-container login-container">
+        <h1 class="text-center m-4 text-success">Login Info</h1>
+        <div class="jumbotron">
+            <form action="" id="login" method="POST">
+                <div class="form-group">
+                    <label for="email">Email<span class="text-danger"></span></label><br>
+                    <input type="email" class="form-control" name="username" id="email" placeholder="Email id">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password<span class="text-danger"></span></label><br>
+                    <input type="password" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Login" class="btn btn-info btn-block">
+                </div>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-8">
+                            New user? Register <a href="/register">here</a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+{{!-- <script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script> --}}
+<script>
+    setTimeout(() => {
+        $('.alert').remove();
+    }, 3000)
+</script>
+</html>  
